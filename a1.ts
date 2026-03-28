@@ -1,4 +1,4 @@
-function formatValue(value: string | number | boolean): string | number | boolean {
+function Value(value: string | number | boolean): string | number | boolean {
   if (typeof value === "string") {
     return value.toUpperCase();
   } 
@@ -13,6 +13,6 @@ function formatValue(value: string | number | boolean): string | number | boolea
   return value;
 }
 
-console.log(formatValue("hello")); // HELLO
-console.log(formatValue(5));       // 50
-console.log(formatValue(true));    // false
+console.log(Value("hello")); // HELLO
+console.log(Value(5));       // 50
+console.log(Value(true));    // false
